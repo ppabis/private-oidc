@@ -8,8 +8,8 @@ resource "null_resource" "get_thumbprint" {
 }
 
 resource "aws_iam_openid_connect_provider" "provider" {
-  url = "https://${var.domain_name}"
-  client_id_list = ["my-client-id"]      # This has to match the audience in JWT signer
+  url             = "https://${var.domain_name}"
+  client_id_list  = ["my-client-id"] # This has to match the audience in JWT signer
   thumbprint_list = [file("thumbprint.txt")]
-  depends_on = [null_resource.get_thumbprint]
+  depends_on      = [null_resource.get_thumbprint]
 }
