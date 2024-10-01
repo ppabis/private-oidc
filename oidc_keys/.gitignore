@@ -1,0 +1,5 @@
+*.pem
+*.json
+venv
+openid-configuration
+!openid-configuration.json

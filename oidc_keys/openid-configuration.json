@@ -1,0 +1,8 @@
+{
+  "issuer": "https://example-domain.com",
+  "jwks_uri": "https://example-domain.com/jwks/keys",
+  "claims_supported": [ "aud", "iat", "iss", "name", "sub", "exp" ],
+  "response_types_supported": [ "id_token" ],
+  "id_token_signing_alg_values_supported": [ "RS256" ],
+  "subject_types_supported": [ "public" ]
+}
