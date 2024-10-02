@@ -1,6 +1,9 @@
 Private OpenID Connect identity provider for IAM.
 ----------------
 
+Read this post to know more:
+https://pabis.eu/blog/2024-09-30-Private-Self-Hosted-OIDC-AWS-Authentication.html
+
 ### Configuration
 #### Step 1.
 Go to `oidc_website`. Edit `terraform.tfvars` to match your domain.
